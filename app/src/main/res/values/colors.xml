@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">@color/colorA07</color>
+    <color name="colorPrimaryDark">@color/colorA01</color>
+    <color name="colorAccent">@color/colorB02</color>
+
+    <color name="colorWhite">#F3F3E3</color>
+
+    <!-- Primera paleta de colores (verde) -->
+    <color name="colorA01">#5fb677</color>
+    <color name="colorA02">#91C470</color>
+    <color name="colorA03">#BED57E</color>
+    <color name="colorA04">#C5C68A</color>
+    <color name="colorA05">#DDDD95</color>
+    <color name="colorA06">#A6C732</color>
+    <color name="colorA07">#B9D162</color>
+    <color name="colorA08">#CCDD91</color>
+    <color name="colorA09">#E0EBC2</color>
+    <color name="colorA10">#5BBEC0</color>
+
+    <!-- Segunda paleta de colores (azul) -->
+    <color name="colorB01">#1792A4</color>
+    <color name="colorB02">#44B4C4</color>
+    <color name="colorB03">#80C9C6</color>
+    <color name="colorB04">#A3D5D1</color>
+    <color name="colorB05">#C8E5E3</color>
+    <color name="colorB06">#5EBDB2</color>
+    <color name="colorB07">#F0DDAA</color>
+    <color name="colorB08">#E47C5D</color>
+    <color name="colorB09">#E42D40</color>
+    <color name="colorB10">#142B3B</color>
+
+
+
+
+
+
+
 </resources>

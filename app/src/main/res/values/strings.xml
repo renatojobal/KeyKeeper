@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">KeyKeeper</string>
+
+    <string name="login_title">Wellcome to KeyKeeper!</string>
+    <string name="login_usuario">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_sign_in">Sign in</string>
+    <string name="login_or">or</string>
+    <string name="login_register">Register</string>
+    <string name="login_forgot_password">Forgot Password</string>
+    <string name="login_remember">Remember</string>
+
+    <string name="user_registry_title">Fill out the form</string>
+    <string name="user_registry_username">Username</string>
+    <string name="user_registry_email">Email</string>
+    <string name="user_registry_password">Password</string>
+    <string name="user_registry_repeat_password">Repeat Password</string>
+    <string name="user_registry_pin">Pin</string>
+    <string name="user_registry_repeat_pin">Repeat Pin</string>
+    <string name="user_registry_send">Send</string>
+
+    <string name="user_information_title">User Information</string>
+
+    <string name="showing_data_title">Data</string>
+    <string name="showing_data_encrypt">Encrypt</string>
+    <string name="showing_data_decrypt">Decrypt</string>
+
+    <string name="unlock_title">Unlock</string>
+    <string name="unlock_ingrese_el_pin">Enter the unlock pin</string>
+    <string name="unlock_pin">Pin</string>
+    <string name="unlock_accept">Accept</string>
+
+    <string name="add_record_title">Add new registry</string>
+    <string name="add_record_web_site">Web site</string>
+    <string name="add_record_email">Email</string>
+    <string name="add_record_password">Password</string>
+    <string name="add_record_add">Add</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="website_length">30</string>
+    <string name="email_length">50</string>
+    <string name="username_length">20</string>
+    <string name="password_length">30</string>
+    <string name="pin_length">4</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

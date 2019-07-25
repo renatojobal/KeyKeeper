@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserRegistry"
+    android:orientation="vertical"
+    android:background="@color/colorB07">
+
+    <TextView
+        android:id="@+id/userRegistryTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/user_registry_title"
+        android:textSize="35sp"/>
+
+
+    <EditText
+        android:id="@+id/userRegistryEtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_registry_username"
+        android:inputType="text"
+        android:maxLength="15"/>
+
+    <EditText
+        android:id="@+id/userRegistryEtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_registry_email"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"/>
+
+    <EditText
+        android:id="@+id/userRegistryEtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_registry_password"
+        android:inputType="textPassword"
+        android:maxLength="20"/>
+
+    <EditText
+        android:id="@+id/userRegistryEtRepeatedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_registry_repeat_password"
+        android:inputType="textPassword"
+        android:maxLength="20"/>
+
+    <EditText
+        android:id="@+id/userRegistryEtPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_registry_pin"
+        android:inputType="text|numberPassword"
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/userRegistryEtRepeatedPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_registry_repeat_pin"
+        android:inputType="text|numberPassword"
+        android:maxLength="4"/>
+
+    <Button
+        android:id="@+id/userRegistryBtnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/user_registry_send"
+        android:background="@color/colorB02"/>
+</LinearLayout>
