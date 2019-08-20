@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/addRecordTvTitle"
+        android:id="@+id/editRecordTvTitle"
         android:layout_width="302dp"
         android:layout_height="42dp"
         android:layout_alignParentStart="true"
@@ -28,46 +28,46 @@
 
 
     <EditText
-        android:id="@+id/addRecordEtWebSite"
+        android:id="@+id/editRecordEtWebSite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addRecordTvTitle"
+        android:layout_below="@+id/editRecordTvTitle"
         android:layout_marginTop="28dp"
         android:hint="@string/add_record_web_site"
-        app:layout_constraintTop_toBottomOf="@+id/addRecordTvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editRecordTvTitle"
         tools:layout_editor_absoluteX="0dp"
         android:inputType="text"
         android:maxLength="30"/>
 
     <EditText
-        android:id="@+id/addRecordEtEmail"
+        android:id="@+id/editRecordEtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addRecordEtWebSite"
+        android:layout_below="@+id/editRecordEtWebSite"
         android:layout_marginTop="8dp"
         android:hint="@string/add_record_email"
-        app:layout_constraintTop_toBottomOf="@+id/addRecordEtWebSite"
+        app:layout_constraintTop_toBottomOf="@+id/editRecordEtWebSite"
         tools:layout_editor_absoluteX="0dp"
         android:inputType="textEmailAddress"
         android:maxLength="50"/>
 
     <EditText
-        android:id="@+id/addRecordEtPassword"
+        android:id="@+id/editRecordEtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addRecordEtEmail"
+        android:layout_below="@+id/editRecordEtEmail"
         android:layout_marginTop="20dp"
         android:hint="@string/add_record_password"
-        app:layout_constraintTop_toBottomOf="@+id/addRecordEtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editRecordEtEmail"
         tools:layout_editor_absoluteX="16dp"
         android:inputType="textPassword"
         android:maxLength="30"/>
 
     <Button
-        android:id="@+id/addRecordBtnAdd"
+        android:id="@+id/editRecordBtnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addRecordEtPassword"
+        android:layout_below="@+id/editRecordEtPassword"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_gravity="center_horizontal"
@@ -77,7 +77,7 @@
         android:text="Save edited"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addRecordEtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editRecordEtPassword"
         android:background="@color/colorB02"/>
 
 

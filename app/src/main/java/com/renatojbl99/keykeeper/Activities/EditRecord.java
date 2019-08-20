@@ -17,16 +17,9 @@ import com.renatojbl99.keykeeper.R;
 
 public class EditRecord extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_record);
-    }
-
-
     // Atributos
-    EditText addRecordEtWebSite, addRecordEtEmail, addRecordEtPassword;
-    Button addRecordBtnAdd;
+    EditText editRecordEtWebSite, editRecordEtEmail, editRecordEtPassword;
+    Button editRecordBtnAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +27,16 @@ public class EditRecord extends AppCompatActivity {
         setContentView(R.layout.activity_add_record);
 
 
-        addRecordEtWebSite = (EditText) findViewById(R.id.addRecordEtWebSite);
-        addRecordEtEmail = (EditText) findViewById(R.id.addRecordEtEmail);
-        addRecordEtPassword = (EditText) findViewById(R.id.addRecordEtPassword);
-        addRecordBtnAdd = (Button) findViewById(R.id.addRecordBtnAdd);
+        editRecordEtWebSite = (EditText) findViewById(R.id.editRecordEtWebSite);
+        editRecordEtEmail = (EditText) findViewById(R.id.editRecordEtEmail);
+        editRecordEtPassword = (EditText) findViewById(R.id.editRecordEtPassword);
+        editRecordBtnAdd = (Button) findViewById(R.id.editRecordBtnAdd);
 
 
 
 
         // listener del button add
-        addRecordBtnAdd.setOnClickListener(new View.OnClickListener() {
+        editRecordBtnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -53,19 +46,19 @@ public class EditRecord extends AppCompatActivity {
                 // todo Agregar registro
 
 
-                String webSite = addRecordEtWebSite.getText().toString();
-                String email = addRecordEtEmail.getText().toString();
-                String password = addRecordEtPassword.getText().toString();
+                String webSite = editRecordEtWebSite.getText().toString();
+                String email = editRecordEtEmail.getText().toString();
+                String password = editRecordEtPassword.getText().toString();
 
 
 
                 // Llamamos al metodo
-                addRecordToDataBase(webSite, email, password);
+                editRecordToDataBase(webSite, email, password);
 
 
 
                 // Go to Showing Data
-                Intent intentMain = new Intent(AddRecord.this, MainActivity.class);
+                Intent intentMain = new Intent(EditRecord.this, MainActivity.class);
                 startActivity(intentMain);
 
                 finish();
@@ -78,7 +71,7 @@ public class EditRecord extends AppCompatActivity {
     }
 
     // TODO : Este metodo debe ser modificado por uno que edite el record
-    private void addRecordToDataBase(String webSite, String email, String password){
+    private void editRecordToDataBase(String webSite, String email, String password){
 
         Record record = new Record(LocalUser.localUser.getUserId(), webSite, email, password);
         DataHelper conn = new DataHelper(getApplicationContext());
