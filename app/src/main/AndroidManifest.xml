@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".Activities.EditRecord"></activity>
         <!-- Launcher Activity -->
         <activity android:name=".Activities.LoginActivity">
             <intent-filter>
@@ -21,20 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Activities.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".Activities.LoginActivity">
-
-        </activity>
-
-        <activity android:name=".Activities.UserRegistry" android:parentActivityName=".Activities.LoginActivity"/>
-        <activity android:name=".Activities.AddRecord" android:parentActivityName=".Activities.LoginActivity"/>
-
-
-
+            android:parentActivityName=".Activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.UserRegistry"
+            android:parentActivityName=".Activities.LoginActivity" />
+        <activity
+            android:name=".Activities.AddRecord"
+            android:parentActivityName=".Activities.LoginActivity" />
     </application>
 
 </manifest>

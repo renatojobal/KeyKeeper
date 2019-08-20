@@ -19,6 +19,7 @@ import com.renatojbl99.keykeeper.DataBase.DataHelper;
 import com.renatojbl99.keykeeper.DataBase.FeedDB;
 import com.renatojbl99.keykeeper.DataBase.User;
 import com.renatojbl99.keykeeper.Encrypted.Encriptacion;
+import com.renatojbl99.keykeeper.Encrypted.Encrypt;
 import com.renatojbl99.keykeeper.LocalUser;
 import com.renatojbl99.keykeeper.R;
 
@@ -153,7 +154,12 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private int verifyUsername(String targetUsername, String targetPassword) {
+    private int verifyUsername(String targetUsername, String password) {
+
+        Encrypt encrypt = new Encrypt();
+        String targetPassword = encrypt.getEncryptWithMD5(password);
+
+
         SQLiteDatabase dbR = conn.getReadableDatabase();
         String [] projection = {FeedDB.CAMPO_PASSWORD};
         String [] argsel = {targetUsername};

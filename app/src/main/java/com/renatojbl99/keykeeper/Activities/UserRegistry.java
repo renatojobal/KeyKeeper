@@ -13,6 +13,7 @@ import com.renatojbl99.keykeeper.DataBase.DataHelper;
 import com.renatojbl99.keykeeper.DataBase.FeedDB;
 import com.renatojbl99.keykeeper.DataBase.User;
 import com.renatojbl99.keykeeper.Encrypted.Encriptacion;
+import com.renatojbl99.keykeeper.Encrypted.Encrypt;
 import com.renatojbl99.keykeeper.R;
 
 
@@ -81,7 +82,10 @@ public class UserRegistry extends AppCompatActivity {
 
     private void addUserToDataBase(String username, String email, String password, String pin){
 
-        User user = new User(username, email, password, pin);
+        Encrypt encrypt = new Encrypt();
+        String encryptedPassword = encrypt.getEncryptWithMD5(password);
+
+        User user = new User(username, email, encryptedPassword, pin);
         SQLiteDatabase dbW = connUser.getWritableDatabase();
         user.save(dbW, getApplicationContext());
 
