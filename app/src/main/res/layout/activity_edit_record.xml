@@ -6,4 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".Activities.EditRecord">
 
+
+
+    <TextView
+        android:id="@+id/addRecordTvTitle"
+        android:layout_width="302dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="Edit Record"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/addRecordEtWebSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addRecordTvTitle"
+        android:layout_marginTop="28dp"
+        android:hint="@string/add_record_web_site"
+        app:layout_constraintTop_toBottomOf="@+id/addRecordTvTitle"
+        tools:layout_editor_absoluteX="0dp"
+        android:inputType="text"
+        android:maxLength="30"/>
+
+    <EditText
+        android:id="@+id/addRecordEtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addRecordEtWebSite"
+        android:layout_marginTop="8dp"
+        android:hint="@string/add_record_email"
+        app:layout_constraintTop_toBottomOf="@+id/addRecordEtWebSite"
+        tools:layout_editor_absoluteX="0dp"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"/>
+
+    <EditText
+        android:id="@+id/addRecordEtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addRecordEtEmail"
+        android:layout_marginTop="20dp"
+        android:hint="@string/add_record_password"
+        app:layout_constraintTop_toBottomOf="@+id/addRecordEtEmail"
+        tools:layout_editor_absoluteX="16dp"
+        android:inputType="textPassword"
+        android:maxLength="30"/>
+
+    <Button
+        android:id="@+id/addRecordBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addRecordEtPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:text="Save edited"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecordEtPassword"
+        android:background="@color/colorB02"/>
+
+
 </android.support.constraint.ConstraintLayout>
